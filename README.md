@@ -27,7 +27,6 @@ The data is then plotted using matplotlib.pyplot on a cartesian plane where the 
 
 
 Metar/ASOS plots:
-
 	Overview:
 This code is for plotting the METAR/ASOS Data observations for 1 hr precipitation that were taken from Iowa State's Website that houses archived data on the Environmental Mesonet page. I searched the Austin, TX region to find stations that reflect the scale of the impact from the flash flooding event that took place in the area. This code is using matplotlib and a CSV reader since the data was set in that format. The matplotlib code was used in order to plot the x and y data. The x data was the time series, and the y data was how much precipitation fell (in inches) for each hour interval.
 Code:
@@ -39,7 +38,6 @@ After this, I plotted the precipitation data onto the y axis which measurement u
 Finally, I wrote out the main title to the graph and plotted a grid to help align the point data to make it more comprehensive. I repeated this process for all other ASOS data that I collected.
 
 Synoptic Charts:
-
 	Overview:
 For this code we utilize many of the mapping functions of cartopy as well as using the generic wpc surface bulletin code from metpy. For each of the synoptic maps the background maps are the same background utilizing adjustable settings for all of the background types of the map. 
 Code:
