@@ -14,19 +14,16 @@ walcllines=walcl.readlines()
 
 rl=[]
 time=[]
-date=[]
 
 for i in range(316,603):
     walcldata=walcllines[i]
     data=walcldata.split()
     for index in range(len(data)):
         columns = walcldata.split()
-        rainfall=columns[5]
+        riverlevel=columns[5]
         times=columns[3]
-        dates=columns[2]
-        rl.append(float(rainfall))
+        rl.append(float(riverlevel))
         time.append(times)
-        date.append(dates)
 plt.plot(time, rl,color='g')
 plt.ylabel("Water Level (ft)")
 plt.xlabel("Time (CDT)")

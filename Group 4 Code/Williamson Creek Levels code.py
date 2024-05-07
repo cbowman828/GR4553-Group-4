@@ -14,19 +14,16 @@ wcllines=wcl.readlines()
 
 rl=[]
 time=[]
-date=[]
 
 for i in range(88,365):
     wcldata=wcllines[i]
     data=wcldata.split()
     for index in range(len(data)):
         columns = wcldata.split()
-        rainfall=columns[5]
+        riverlevel=columns[5]
         times=columns[3]
-        dates=columns[2]
-        rl.append(float(rainfall))
+        rl.append(float(riverlevel))
         time.append(times)
-        date.append(dates)
 plt.plot(time, rl,color='g')
 plt.ylabel("Water Level (ft)")
 plt.xlabel("Time (CDT)")
